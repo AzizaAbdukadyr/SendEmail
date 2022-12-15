@@ -6,7 +6,7 @@ MY_EMAIL = "app@gmail.com"
 MY_PASSWORD = "abcd1234"
 now = dt.datetime.now()
 weekday = now.weekday()
-if weekday == 1: # day number of week
+if weekday == 1: # weekday
     with open("quotes.txt") as quote_file:
         all_quotes = quote_file.readlines()
         quote = random.choice(all_quotes)
